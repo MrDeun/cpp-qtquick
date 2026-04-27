@@ -1,9 +1,11 @@
 add_rules("mode.debug")
 
-add_languages("c++23")
+add_languages("c++17")
+add_requires("fmt")
 
 target("quicky")
-add_rules("qt.quickapp", "qt.moc")
+add_rules("qt.quickapp")
+add_packages("fmt")
 add_files("src/include/*.hpp")
 add_files("src/lib/*.cpp")
 add_files("src/main.cpp")

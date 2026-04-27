@@ -1,23 +1,11 @@
-#include "include/Firefox.hpp"
-#include "include/InternetExplorer.hpp"
-#include "include/UserInteractor.hpp"
-#include "qcoreapplication.h"
-#include "qobject.h"
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#include <fmt/core.h>
+
 int main(int argc, char *argv[]) {
-
+  fmt::println("Hello world!\n");
   // QCoreApplication app(argc, argv);
-  UserInteractor interactor{};
-  Firefox fox{};
-  InternetExplorer exp{};
-
-  QObject::connect(&interactor, &UserInteractor::phraseTyped, &fox,
-                   &Firefox::browse);
-  QObject::connect(&interactor, &UserInteractor::phraseTyped, &exp,
-                   &InternetExplorer::browseRequested);
-
   QGuiApplication app(argc, argv);
 
   QQmlApplicationEngine engine;
@@ -25,6 +13,5 @@ int main(int argc, char *argv[]) {
   if (engine.rootObjects().isEmpty())
     return -1;
 
-  interactor.getInput();
   return app.exec();
 }
