@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[]) {
 
-  QCoreApplication app(argc, argv);
+  // QCoreApplication app(argc, argv);
   UserInteractor interactor{};
   Firefox fox{};
   InternetExplorer exp{};
@@ -18,18 +18,13 @@ int main(int argc, char *argv[]) {
   QObject::connect(&interactor, &UserInteractor::phraseTyped, &exp,
                    &InternetExplorer::browseRequested);
 
+  QGuiApplication app(argc, argv);
+
+  QQmlApplicationEngine engine;
+  engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+  if (engine.rootObjects().isEmpty())
+    return -1;
+
   interactor.getInput();
-
-  // #if QT_VERSION >= 0x50601
-  //     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-  // #endif
-
-  //     QGuiApplication app(argc, argv);
-
-  //     QQmlApplicationEngine engine;
-  //     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-  //     if (engine.rootObjects().isEmpty())
-  //         return -1;
-
   return app.exec();
 }

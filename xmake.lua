@@ -4,7 +4,7 @@ add_languages("c++23")
 
 
 target("Workspace")
-    add_rules("qt.quickapp","qt.moc")
+    add_rules("qt.quickapp")
     add_files("src/include/*.hpp")
     add_files("src/lib/*.cpp")
     add_files("src/main.cpp")
