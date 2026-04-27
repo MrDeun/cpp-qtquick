@@ -1,14 +1,13 @@
-add_rules("mode.debug", "mode.release")
+add_rules("mode.debug")
 
 add_languages("c++23")
 
-
-target("Workspace")
-    add_rules("qt.quickapp")
-    add_files("src/include/*.hpp")
-    add_files("src/lib/*.cpp")
-    add_files("src/main.cpp")
-    add_files("src/qml.qrc")
+target("quicky")
+add_rules("qt.quickapp", "qt.moc")
+add_files("src/include/*.hpp")
+add_files("src/lib/*.cpp")
+add_files("src/main.cpp")
+add_files("src/qml.qrc")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
@@ -78,4 +77,3 @@ target("Workspace")
 --
 -- @endcode
 --
-
