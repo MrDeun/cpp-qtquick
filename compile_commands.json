@@ -1,0 +1,16 @@
+[
+{
+  "directory": "/home/mrdeun/Workspace/cpp-qtquick",
+  "arguments": ["/usr/lib64/qt6/libexec/rcc", "-name", "qml", "src/qml.qrc", "-o", "build/.gens/quicky/linux/x86_64/release/rules/qt/qrc/qml_be58aff6.cpp"],
+  "file": "build/.gens/quicky/linux/x86_64/release/rules/qt/qrc/qml_be58aff6.cpp"
+},
+{
+  "directory": "/home/mrdeun/Workspace/cpp-qtquick",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-std=c++17", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_QUICK_LIB", "-DQT_QML_LIB", "-DQT_CORE_LIB", "-DQT_NETWORK_LIB", "-I", "/usr/include/qt6/QtGui", "-I", "/usr/include/qt6/QtGui/6.10.3", "-I", "/usr/include/qt6/QtGui/6.10.3/QtGui", "-I", "/usr/include/qt6/QtQuick", "-I", "/usr/include/qt6/QtQuick/6.10.3", "-I", "/usr/include/qt6/QtQuick/6.10.3/QtQuick", "-I", "/usr/include/qt6/QtQml", "-I", "/usr/include/qt6/QtQml/6.10.3", "-I", "/usr/include/qt6/QtQml/6.10.3/QtQml", "-I", "/usr/include/qt6/QtCore", "-I", "/usr/include/qt6/QtCore/6.10.3", "-I", "/usr/include/qt6/QtCore/6.10.3/QtCore", "-I", "/usr/include/qt6/QtNetwork", "-I", "/usr/include/qt6/QtNetwork/6.10.3", "-I", "/usr/include/qt6/QtNetwork/6.10.3/QtNetwork", "-I", "/usr/include/qt6", "-I", "/usr/lib64/qt6/mkspecs/linux-g++", "-I", "/home/mrdeun/.xmake/packages/f/fmt/12.1.0/8a24306c357441a095c4e7e3408475be/include", "-fPIC", "-o", "build/.objs/quicky/linux/x86_64/release/gens/rules/qt/qrc/qml_be58aff6.cpp.o", "build/.gens/quicky/linux/x86_64/release/rules/qt/qrc/qml_be58aff6.cpp"],
+  "file": "build/.gens/quicky/linux/x86_64/release/rules/qt/qrc/qml_be58aff6.cpp"
+},
+{
+  "directory": "/home/mrdeun/Workspace/cpp-qtquick",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-std=c++17", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_QUICK_LIB", "-DQT_QML_LIB", "-DQT_CORE_LIB", "-DQT_NETWORK_LIB", "-I", "/usr/include/qt6/QtGui", "-I", "/usr/include/qt6/QtGui/6.10.3", "-I", "/usr/include/qt6/QtGui/6.10.3/QtGui", "-I", "/usr/include/qt6/QtQuick", "-I", "/usr/include/qt6/QtQuick/6.10.3", "-I", "/usr/include/qt6/QtQuick/6.10.3/QtQuick", "-I", "/usr/include/qt6/QtQml", "-I", "/usr/include/qt6/QtQml/6.10.3", "-I", "/usr/include/qt6/QtQml/6.10.3/QtQml", "-I", "/usr/include/qt6/QtCore", "-I", "/usr/include/qt6/QtCore/6.10.3", "-I", "/usr/include/qt6/QtCore/6.10.3/QtCore", "-I", "/usr/include/qt6/QtNetwork", "-I", "/usr/include/qt6/QtNetwork/6.10.3", "-I", "/usr/include/qt6/QtNetwork/6.10.3/QtNetwork", "-I", "/usr/include/qt6", "-I", "/usr/lib64/qt6/mkspecs/linux-g++", "-I", "/home/mrdeun/.xmake/packages/f/fmt/12.1.0/8a24306c357441a095c4e7e3408475be/include", "-fPIC", "-o", "build/.objs/quicky/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]
