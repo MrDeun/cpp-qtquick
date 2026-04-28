@@ -1,11 +1,11 @@
 #include "../include/UserInteractor.hpp"
-#include <print>
+#include <fmt/core.h>
 
 #include <QDebug>
 UserInteractor::UserInteractor(QObject *parent) : QObject(parent) {}
 
 void UserInteractor::getInput() {
-  std::println(stdout, "Search phrase: ");
+  fmt::println(stdout, "Search phrase: ");
 
   QTextStream s(stdin);
 

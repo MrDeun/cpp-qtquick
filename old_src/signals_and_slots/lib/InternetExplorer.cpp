@@ -2,7 +2,7 @@
 #include "qobject.h"
 #include "qoverload.h"
 #include <QDebug>
-#include <print>
+#include <fmt/core.h>
 
 InternetExplorer::InternetExplorer(QObject *parent) : QObject(parent) {
   m_timer.setInterval(10000);
@@ -14,7 +14,7 @@ InternetExplorer::InternetExplorer(QObject *parent) : QObject(parent) {
 }
 
 void InternetExplorer::browse() {
-  std::println("EXP: Result 1...");
-  std::println("EXP: Result 2...");
-  std::println("EXP: Result 3...");
+  fmt::println("EXP: Result 1...");
+  fmt::println("EXP: Result 2...");
+  fmt::println("EXP: Result 3...");
 }
